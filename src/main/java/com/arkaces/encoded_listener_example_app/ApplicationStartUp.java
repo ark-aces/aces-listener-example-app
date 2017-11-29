@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j
-public class DemoAppInitializer implements ApplicationListener<ContextRefreshedEvent> {
+public class ApplicationStartUp implements ApplicationListener<ContextRefreshedEvent> {
 
     private final DefaultApi bitcoinListenerClient;
     private final DefaultApi arkListenerClient;

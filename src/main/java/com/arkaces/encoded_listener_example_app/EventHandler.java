@@ -1,7 +1,6 @@
 package com.arkaces.encoded_listener_example_app;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.IOException;
-
 @RestController
 @Slf4j
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 public class EventHandler {
-
-    private final ObjectMapper eventObjectMapper;
 
     @PostMapping("/bitcoin-events")
     public ResponseEntity<Void> handleBitcoinEvent(@RequestBody JsonNode event) {

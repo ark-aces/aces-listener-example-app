@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Data
 @Component
 @ConfigurationProperties(prefix = "listeners")
-public class ListenerUrlSettings {
+public class ListenerSettings {
     private String bitcoinListenerUrl;
     private String arkListenerUrl;
 }
