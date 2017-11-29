@@ -3,6 +3,16 @@
 This application demos how to connect to encoded listeners and
 receive blockchain events using the Encoded Listener SDKs.
 
+## Dependencies
+
+This application connects to two Encoded Listeners (one for Ark
+transactions and one for Bitcoin transactions) running locally
+on different ports.
+
+- [Bitcoin Encoded Listener](https://github.com/ark-aces/aces-encoded-listener-bitcoin) on port `9090`
+- [Ark Encoded Listener](https://github.com/ark-aces/aces-encoded-listener-ark) on port `9091`
+ 
+
 ## Starting Application
 
 Start application:
